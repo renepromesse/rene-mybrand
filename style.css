@@ -5,6 +5,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	background: #eeeeee;
 }
 #header-home-menu{
 	background: white;
@@ -13,7 +14,7 @@ body{
 	//margin-bottom: 2px;
 	align-items: flex-end;
 	justify-content: center;
-	border-bottom: 1px solid skyblue;
+	border-bottom: 1px solid darkgrey;
 }
 
 #menu {
@@ -26,10 +27,11 @@ body{
 	color:black;
 	text-decoration: none;
 	font-size: 20px;
+	transition: 0.2s;
 }
 .nav-link:hover{
-	color: blue;
-	animation: nav-anim 2s;
+	color: #2F73C8;// #3377CC;
+
 }
 /*@keyframes nav-anim {
 	from 0%{
@@ -40,7 +42,75 @@ body{
 	}
 }
 */
+/*-------------------------------end of menu design---------------------------*/
+main{
+	display: flex;
+	flex-direction: column;
+	//background: lightblue;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.presentation .imgs-intro img{
+
+	height: 30vh;
+	border: 10px solid #8F8528;
+	border-radius: 20%;
+}
+
+.presentation{
+	display: flex;
+	//border: 1px solid blue;
+	width: 80%;
+	height: 60vh;
+	//background: orange;
+	justify-content: space-around;
+	align-items: center;
+}
+.intro{
+	//border: 1px solid yellow;
+	//text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+.name-intro, .title-intro{
+	text-align:center;
+}
+.name-intro p{
+	font-size: 25px;
+}
+.name-intro h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.title-intro p{
+	font-size: 25px;
+
+}
+.title-intro h2{
+	font-size: 30px;
+	font-weight:300;
+}
+
+.view-more button{
+	background: #8F8528;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding:10px 50px;
+	//margin: 20px;
+	text-align: center;
+	border:none;
+	border-radius:10px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.view-more button:hover{
+	color:white;
+	background: #4F4915;
+}
 
 
-
-
+/*------------------------------------end of the landing page design---------------------*/
