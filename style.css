@@ -266,3 +266,51 @@ main{
 .message-section form{
 	text-align:center;
 }
+/*------------------------------------End of contact page-----------------------*/
+/*------------------------------------Start of blog page -----------------------*/
+
+.title-section p{
+	font-size: 35px;
+}
+.article-container{
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	margin: 2% 0% 0% 12%;
+}
+.article-section{
+	display: flex;
+	padding: 10px;
+
+}
+.article-section img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border:2px solid #8F8528;
+}
+.article-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding:0px 0px 0px 20px;
+}
+.article-title h2{
+	font-size: 25px;
+	font-weight: lighter;
+	color: #50555c;
+}
+.article-info{
+	display: flex;
+}
+.article-info p{
+	padding: 5px 20px 0px 0px; 
+	font-size: 14px;
+	color: #5E9516;
+}
+.article-title h2,.article-info p{
+	margin: 0px;
+}
+.article-section a{
+	text-decoration: none;
+}
