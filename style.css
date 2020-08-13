@@ -184,4 +184,85 @@ main{
 
 
 /*--------------------------------------end of admin login page------------------------*/
+/*--------------------------------------start of contact page -------------------------*/
+.main-content{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+.title-section{
+	text-align: center;
+}
+.contact-info{
+	display: flex;
+	justify-content: space-around;
 
+}
+.contact-section, .message-section{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	width: 50vh;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+.contact-section img{
+	height: 5vh;
+	widows: 5vh;
+}
+
+.contact-section h3{
+	font-size: 20px;
+	font-weight: lighter;
+	padding:0px 0px 5px 30px;
+}
+.main-content a{
+	text-decoration: none;
+	font-size: 16px;
+	padding-top: 0px;
+	color: #3377CC;
+
+}
+
+.contact-section p{
+	text-align: center;
+}
+
+.connect-link{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	margin: 0px 0px 0px 50px;
+}
+
+
+.message-section h3{
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+.message-section input[type=text],.message-section input[type=email],.message-section textarea,.message-section button{
+	width:70%;
+	padding:10px;
+	margin: 0px 0px 20px 0px;
+	border:2px solid #ccc;
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 10px;
+}
+.message-section button{
+	width: 50%;
+	color: white;
+	background: #000;
+	opacity: 0.5;
+	font-size: 20px;
+	cursor: pointer;
+	border:none;
+}
+.message-section button:hover{
+	opacity: 0.7;
+}
+.message-section form{
+	text-align:center;
+}
