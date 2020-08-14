@@ -9,12 +9,15 @@ body{
 }
 #header-home-menu{
 	background: white;
+	width: 100%;
 	display: flex;
 	height: 120px;
 	//margin-bottom: 2px;
 	align-items: flex-end;
 	justify-content: center;
 	border-bottom: 1px solid darkgrey;
+	position: fixed;
+	top: 0;
 }
 
 #menu {
@@ -46,8 +49,7 @@ body{
 main{
 	display: flex;
 	flex-direction: column;
-	//background: lightblue;
-	height: 80vh;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -61,16 +63,12 @@ main{
 
 .presentation{
 	display: flex;
-	//border: 1px solid blue;
 	width: 80%;
 	height: 60vh;
-	//background: orange;
 	justify-content: space-around;
 	align-items: center;
 }
 .intro{
-	//border: 1px solid yellow;
-	//text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
@@ -111,6 +109,135 @@ main{
 	color:white;
 	background: #4F4915;
 }
+/*---------------------------------------------end of main section----------------------------*/
+/*---------------------------------------------start of about page----------------------------*/
+.about-section{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	margin: auto;
+}
+.about-section p{
+	font-style: italic;
+}
+.title-sections{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title-sections hr{
+	margin-right: 20px;
+	margin-left: 20px;
+	border-width: 2px;
+}
+.title-sections h2{
+	font-size: 30px;
+	font-weight: lighter;
+}
+.title-sections h4{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.project-section{
+	display: flex;
+	width: 50%;
+	margin-left: -100px;
+	margin-bottom: 30px;
+}
+.project-section:hover{
+	opacity: 0.7;
+}
+.img-section{
+	margin: auto;
+	width: 60%;
+}
+.img-section img{
+	width: 200px;
+	height: 200px;
+	border-radius: 40px;
+}
+.project-description{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.project-description a{
+	text-decoration: none;
+}
+.project-description h3{
+	color: #3377CC;
+	font-size: 25px;
+	font-weight: lighter;
+	margin: 0px;
+}
+.project-description p{
+	margin: 0px;
+}
+.task{
+	font-size: 15px;
+	color:green;//#8F8528;
+	padding: 3px 0px 0px 3px;
+}
+.project-info{
+	color: black;
+	padding: 20px 0px 0px 0px;
+
+}
+
+.section1 img{
+	width:40px;
+	height: 40px;
+}
+.skills-container{
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	margin-bottom: 200px;
+}
+
+.row1{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.section1{
+	display: flex;
+	flex-direction:column;
+	align-items: center;	
+}
+.section1 h3{
+	color: #3377CC;
+}
+.skills{
+	display: flex;
+	width: 150px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.skills p{
+	font-weight: bold;
+	color: green;//#8F8528;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*------------------------------------end of the landing page design---------------------*/
@@ -314,3 +441,4 @@ main{
 .article-section a{
 	text-decoration: none;
 }
+/*-------------------------------------
