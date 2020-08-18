@@ -1,0 +1,243 @@
+*{
+	font-family: sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background: #eeeeee;
+}
+#header-home-menu{
+	background: white;
+	width: 100%;
+	display: flex;
+	height: 120px;
+	//margin-bottom: 2px;
+	align-items: flex-end;
+	justify-content: center;
+	border-bottom: 1px solid darkgrey;
+	position: fixed;
+	top: 0;
+}
+
+#menu {
+	display: flex;
+	list-style-type: none;
+	width: 400px;
+	justify-content: space-around;
+}
+.nav-link{
+	color:black;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.2s;
+}
+.nav-link:hover{
+	color: #2F73C8;// #3377CC;
+
+}
+
+/*-------------------------------end of menu design---------------------------*/
+main{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.presentation .imgs-intro img{
+
+	height: 30vh;
+	border: 10px solid #8F8528;
+	border-radius: 20%;
+}
+
+.presentation{
+	display: flex;
+	width: 80%;
+	height: 60vh;
+	justify-content: space-around;
+	align-items: center;
+}
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+.name-intro, .title-intro{
+	text-align:center;
+}
+.name-intro p{
+	font-size: 25px;
+}
+.name-intro h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.title-intro p{
+	font-size: 25px;
+
+}
+.title-intro h2{
+	font-size: 30px;
+	font-weight:300;
+}
+
+.view-more button{
+	background: #8F8528;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding:10px 50px;
+	//margin: 20px;
+	text-align: center;
+	border:none;
+	border-radius:10px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.view-more button:hover{
+	color:white;
+	background: #4F4915;
+}
+/*---------------------------------------------end of main section----------------------------*/
+/*---------------------------------------------start of about page----------------------------*/
+.about-section{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	margin: auto;
+}
+.about-section p{
+	font-style: italic;
+}
+.title-sections{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title-sections hr{
+	margin-right: 20px;
+	margin-left: 20px;
+	border-width: 2px;
+}
+.title-sections h2{
+	font-size: 30px;
+	font-weight: lighter;
+}
+.title-sections h4{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+
+.me-description{
+	width: 50%;
+	margin-bottom: 20px;
+}
+.me-description p{
+	line-height: 1.7;
+	font-style: normal;
+	font-weight: bold;
+}
+.open-quote{
+	font-size: 30px;
+	color: red;
+}
+.quotes{
+	text-align:center;
+	line-height: 1.7;
+	font-weight: bold;
+}
+.quotes .author,.quotes p{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.project-section{
+	display: flex;
+	width: 50%;
+	margin-left: -100px;
+	margin-bottom: 30px;
+}
+.project-section:hover{
+	opacity: 0.7;
+}
+.img-section{
+	margin: auto;
+	width: 60%;
+}
+.img-section img{
+	width: 200px;
+	height: 200px;
+	border-radius: 40px;
+}
+.project-description{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.project-description a{
+	text-decoration: none;
+}
+.project-description h3{
+	color: #3377CC;
+	font-size: 25px;
+	font-weight: lighter;
+	margin: 0px;
+}
+.project-description p{
+	margin: 0px;
+}
+.task{
+	font-size: 15px;
+	color:green;//#8F8528;
+	padding: 3px 0px 0px 3px;
+}
+.project-info{
+	color: black;
+	padding: 20px 0px 0px 0px;
+
+}
+
+.section1 img{
+	width:40px;
+	height: 40px;
+}
+.skills-container{
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	margin-bottom: 200px;
+}
+
+.row1{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.section1{
+	display: flex;
+	flex-direction:column;
+	align-items: center;	
+}
+.section1 h3{
+	color: #3377CC;
+}
+.skills{
+	display: flex;
+	width: 150px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.skills p{
+	font-weight: bold;
+	color: green;//#8F8528;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
