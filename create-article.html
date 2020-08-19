@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create and edit articles</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header id="header-home-menu">
+			<nav>
+				<ul id="menu">
+					<li><a href="landing-page.html#presentation" class="nav-link">HOME</a></li>
+					<li><a href="#" class="nav-link">ARTICLES</a></li>
+					<li><a href="view-message.html" class="nav-link">MESSAGES</a></li>
+					<li><a href="#" class="nav-link">Logout</a></li>
+				</ul>
+			</nav>
+		
+	</header>
+	<div class="articles">
+		
+		<div class="title-sections">
+			<hr style="width: 7%;">
+			<h4>Create new Articles</h4>
+			<hr style="width: 7%;">
+		</div>
+
+		<div class="new-article-section">
+			<button id="create-article">Create new article</button>
+			<div class="article-space">
+				<form>
+					<input type="file" accept=".png,.jpg,.jpeg,.gif,.jiff" name="filed" id="files">
+					<label for="files" id="labelfile"> Click to Choose a cover image</label><br><br>
+					<input type="text" name="" placeholder="Title of the article"><br>
+					<textarea class="write-article" cols="40" rows="15" placeholder="Write the article here"></textarea><br>
+					<button>Post</button>
+					<button>Cancel</button>
+					<!--<button>Preview</button>-->
+
+				</form>
+			</div>
+		</div>
+
+		<div class="title-sections">
+			<hr style="width: 7%;">
+			<h4>Edit & Delete old Articels</h4>
+			<hr style="width: 7%;">
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div class="old-articles-section">
+			<div class="article-img">
+				<img src="img/prof-img.png" alt="dr king">
+			</div>
+			<div class="article-info">
+				<div class="article-title">
+					<h2>The single greatest thing I learned this past decades.</h2>
+					<p>January 20, 2020</p>
+				</div>
+				<div class="edit-delete">
+					<h3 class="edit">Edit</h3>
+					<h3 class="delete">Delete</h3>
+				</div>  
+			</div>
+		</div>
+		<div class="old-articles-section">
+			<div class="article-img">
+				<img src="img/prof-img.png" alt="dr king">
+			</div>
+			<div class="article-info">
+				<div class="article-title">
+					<h2>The single greatest thing I learned this past decades.</h2>
+					<p>January 20, 2020</p>
+				</div>
+				<div class="edit-delete">
+					<h3 class="edit">Edit</h3>
+					<h3 class="delete">Delete</h3>
+				</div>  
+			</div>
+		</div>
+		<div class="old-articles-section">
+			<div class="article-img">
+				<img src="img/prof-img.png" alt="dr king">
+			</div>
+			<div class="article-info">
+				<div class="article-title">
+					<h2>The single greatest thing I learned this past decades.</h2>
+					<p>January 20, 2020</p>
+				</div>
+				<div class="edit-delete">
+					<h3 class="edit">Edit</h3>
+					<h3 class="delete">Delete</h3>
+				</div>  
+			</div>
+		</div>
+	</div>
+
+<!-- some basic javascript -->
+
+	<script type="text/javascript">
+		let createButton= document.getElementById("create-article");
+		createButton.addEventListener("click",function(){
+			this.classList.toggle("active");
+			let articleSpace= this.nextElementSibling;
+			if(articleSpace.style.display=== "block"){
+				articleSpace.style.display="none";
+			}
+			else{
+				articleSpace.style.display="block";
+			}
+			if(articleSpace.style.maxHeight){
+				articleSpace.style.maxHeight=null;
+				createButton.innerHTML="Create new Article";
+				
+			}
+			else{
+				articleSpace.style.maxHeight= articleSpace.scrollHeight + "px";
+				createButton.innerHTML="Hide this Panel";
+				
+			}
+
+		});
+	</script>
+</body>
+</html>
