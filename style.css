@@ -119,6 +119,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	text-align: center;
 }
 .title-sections hr{
 	margin-right: 20px;
@@ -243,6 +244,16 @@ main{
 }
 
 /*--------------------------------------start of contact page -------------------------*/
+@media screen and (max-width: 600px){
+	.contact-info{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-content{
+		padding-top: 40px;
+	}
+}
 .main-content{
 	display: flex;
 	flex-direction: column;
