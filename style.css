@@ -15,7 +15,6 @@ body{
 	//margin-bottom: 2px;
 	align-items: flex-end;
 	justify-content: center;
-	border-bottom: 1px solid darkgrey;
 	position: fixed;
 	top: 0;
 }
@@ -38,6 +37,29 @@ body{
 }
 
 /*-------------------------------end of menu design---------------------------*/
+
+@media screen and (max-width: 700px){
+.presentation,.project-section,.skills-container{
+	flex-direction: column;
+}
+.presentation{
+	margin-top: 100px;
+}
+.skills-container{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.title-sections{
+	text-align: center;
+}
+.about-section{
+	padding-top: 60px;
+}
+}
+
+
+
 main{
 	display: flex;
 	flex-direction: column;
@@ -118,6 +140,7 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	//font-size: 10px;
 }
 .title-sections hr{
 	margin-right: 20px;
@@ -127,6 +150,7 @@ main{
 .title-sections h2{
 	font-size: 30px;
 	font-weight: lighter;
+	text-align: center;
 }
 .title-sections h4{
 	font-size: 20px;
