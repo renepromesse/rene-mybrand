@@ -123,6 +123,22 @@ main{
 	color:white;
 	background: #4F4915;
 }
+
+#admin-login{
+	background: rgba(0,0,0,0.70);
+	font-size: 20px;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+#admin-login:hover{
+	background: rgba(0,0,255,0.70);
+	transition: 0.3s;
+}
 /*---------------------------------------------end of main section----------------------------*/
 /*---------------------------------------------start of about page----------------------------*/
 .about-section{
