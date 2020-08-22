@@ -628,5 +628,49 @@ main{
 	font-weight: bolder;
 	transition: 0.2s;
 }
+/*-------------------------------------responsiveness--------------------*/
+@media screen and (max-width: 1000px){
 
+.top-img{
+	height: 280px;
+}
+}
+@media screen and (max-width: 900px){
+
+.top-img{
+	height: 250px;
+	background-position: 0px -130px;
+}
+.top-title{
+
+}
+}
+@media screen and (max-width: 780px){
+.top-img{
+	height: 190px;
+	background-position: 0px -100px;
+}
+}
+@media screen and (max-width: 700px){
+
+.top-img{
+	height: 160px;
+	background-position: 0px -90px;
+}
+.top-title h1{
+	font-size: 28px;
+	text-align: center;
+}
+.top-title p{
+	font-size: 18px;
+	text-align: center;
+}
+.article-start{
+	width: 100%;
+}
+.main-article{
+	width: 90%;
+	margin: auto;
+}
+}
 
