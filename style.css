@@ -784,6 +784,30 @@ main{
 	cursor: pointer;
 }
 
+@media screen and (max-width: 660px){
+
+.new-article-section{
+	width: 100%;
+}
+.title-sections h4{
+	text-align: center;
+	font-size: 18px;
+}
+.old-articles-section{
+	width: 90%;
+}
+.article-info{
+	width: 90%;
+	margin: auto;
+}
+}
+
+
+
+
+
+
+
 /*----------------------------------------end of the crate article page -----------------------*/
 
 
