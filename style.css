@@ -658,10 +658,11 @@ main{
 .new-article-section{
 	display: flex;
 	flex-direction: column;
-	//border: 1px solid orange;
 	width: 85vh;
 	margin: auto;
 	margin: 20px auto;
+	height: auto;
+	overflow: auto;
 }
 
 #create-article{
