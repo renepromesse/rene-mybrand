@@ -66,13 +66,12 @@ main{
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
-}
-
-.presentation .imgs-intro img{
-
-	height: 30vh;
+}	
+.imgs-intro{
+	border-radius: 50px;
 	border: 10px solid #8F8528;
-	border-radius: 20%;
+	display: block;
+	background: #8F8528;
 }
 
 .presentation{
@@ -219,10 +218,15 @@ main{
 .project-description{
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
+	margin: 0px;
+	//width: 300px;
+	//border: 1px solid blue;
+	box-sizing: border-box;
 }
 .project-description a{
 	text-decoration: none;
+	width: 300px;
+	border: 1px solid orange;
 }
 .project-description h3{
 	color: #3377CC;
@@ -280,4 +284,96 @@ main{
 	margin-left: 10px;
 	padding-right: 10px;
 }
+/*----------------style for edit sections--------------*/
 
+.name-intro #name,#profession,.edit-about textarea{
+	width: 100%;
+	font-size: 26px;
+	padding: 10px 5px;
+	border-radius: 10px;
+	resize: none;
+}
+#profile-img,input[type=file]{
+	opacity: 0;
+	width: 0.1px;
+	height: 0.1px;
+}
+.edit-img{
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.edit-img label,.img-section label,.edit-skills label{
+	background:rgba(0,0,0,0.7);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 80px;
+	cursor: pointer;
+
+}
+.edit-about textarea{
+	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.edit-project{
+	width: 50%;
+}
+.project-name{
+	font-size: 25px;
+	color: #3377CC;
+	padding: 5px;
+}
+.project-task{
+	color: green;
+	font-size: 18px;
+	font-style: italic;
+}
+.project-desc{
+	font-size: 20px;
+	padding: 4px;
+	width: 300px;
+	resize: none;
+}
+.project-link{
+	color: blue;
+	font-size: 18px;
+}
+.project-name,.project-task,.project-desc,.project-link{
+	border-radius: 5px;
+	width: 300px;
+}
+
+.edit-skills label{
+	font-size: 20px;
+	padding: 5px 10px;
+	font-weight: lighter;
+}
+.edit-skills input[type=text]{
+	font-size: 20px;
+	width: 150px;
+	padding: 5px;
+}
+#save{
+	width: 150px;
+	position: fixed;
+	top: 120px;
+	margin: auto;
+	background: #3377CC;
+	color: white;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+.newproject{
+	width: 60%;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #3377CC;
+}

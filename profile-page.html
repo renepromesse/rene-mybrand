@@ -3,6 +3,7 @@
 <head>
 	<title>landing page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<header id="header-home-menu">
@@ -16,20 +17,37 @@
 			</nav>
 		
 	</header>
+	<button id="save">Save</button>
 	<main id="presentation">
 		<div class="presentation" >
 			<div class="intro">
 				<div class="name-intro">
 					<i><p>Hey I'm</p></i>
 					<h1>Rene Promesse N.</h1>
+					<div class="edit-section">
+					<form>
+						<input type="text" id="name" name="" placeholder="Write your name">
+					</form>
+					</div>
 				</div>
 				<div class="title-intro">
 					<p>I'm a</p>
 					<h2>Software Engineer</h2>
+					<div class="edit-section">
+						<form>
+							<input type="text" id="profession" name="" placeholder="Write your Profession"><br>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="imgs-intro">
-				<a href="#myskills"><img src="img/rene.jpeg" alt="Rene Promesse image"></a>
+				<a href="#myskills"><img style="height: 300px; border-radius: 40px 40px 40px 40px;" src="img/rene.jpeg" alt="Rene Promesse image"></a>
+				<div class="edit-img">
+					<form>
+						<input type="file" name="" id="profile-img">
+						<label for="profile-img">Edit</label>
+					</form>	
+				</div>
 			</div>
 		</div>
 		<div class="view-more">
@@ -44,11 +62,17 @@
 			<hr style="width:7%;">
 		</div>
 		<div class="me-description">
-			<p>
+			<p style="display: none;">
 				<i class="open-quote">"</i> I'm an allround Softwate developer. I'm a senior programmer with good knowledge of both front-end and back-end techniques. I stand for quality and I often improve my speed by doing 'Competitive Programming' as a Hobby. I love spending time on fixing little details and optimizing web apps. Also I like working in a team. <br> 
 				As the saying goes: 'two heads are better than one'.<i class="open-quote">"</i>
 			</p>
+			<div class="edit-about">
+				<form>
+					<textarea cols="30" rows="10" placeholder="Write the description about you and your profession"></textarea>
+				</form>
+			</div>
 		</div>
+		
 		<div class="title-sections">
 			<hr style="width: 7%;">
 			<h2>Here is what I've done so far</h2>
@@ -68,14 +92,31 @@
 		<div class="project-section">
 			<div class="img-section">
 				<a href="https://www.github.com/renepromesse" target="_blank"><img src="img/rene.jpeg" alt="Rene image"></a>
+				<input type="file" accept="image/*" name="" id="project-img">
+				<label for="project-img">Edit</label>
 			</div>
-			<div class="project-description">
+			<div class="project-description" style="display: none;">
 				<a href="https://www.github.com/renepromesse" target="_blank"><h3>Personal Blog</h3>
 				<p class="task">Design & implementation in 2020</p>
 				<p class="project-info">This website you are visiting is my first professional project. I`m the man behind the design, codes and the content you find here.
 
 				You can find the source codes on my GitHub repo</p><br> 
-				<a href="https://www.github.com/renepromesse" target="_blank">www.github.com/renepromesse</a> </a>
+				<a href="https://www.github.com/renepromesse" target="_blank">Visit Github project</a> </a>
+			</div>
+			<div class="edit-project">
+				<form>
+					<input type="text" class="project-name" name="" placeholder="Write the project name"><br>
+					<input type="text" class="project-task" name="" placeholder="Write the project task"><br>
+					<textarea class="project-desc" cols="50" rows="5" placeholder="Write the project description"></textarea>
+					<input type="text" class="project-link" name="" placeholder="Write/paste the link of the project">
+				</form>
+			</div>
+		</div>
+		<button class="newproject">Add new Project</button>
+
+		<div>
+			<div>
+				<img src="">
 			</div>
 		</div>
 		
@@ -87,8 +128,10 @@
 		<div class="project-section">
 			<div class="img-section">
 				<a href="https://cyberstars.pro/rwanda/" target="_blank"><img src="img/cyberstars.jpg" alt="Rene image"></a>
+				<input type="file" accept="image/*" name="" id="project-img">
+				<label for="project-img">Edit</label>
 			</div>
-			<div class="project-description">
+			<div class="project-description" style="display: none;">
 				<a href="https://cyberstars.pro/rwanda/" target="_blank"><h3>Cyber Star Rwanda</h3>
 				<p class="task">Qualified till the semi-finals.</p>
 				<p class="project-info">Rwanda Information Society Authority “RISA” is a government institution mandated to champion Rwanda’s Digital Transformation through egovernment services, ICT in education, ICT in rural areas and ICT everyday in socio-economic transformation.
@@ -96,7 +139,18 @@
 				You can find the source codes on my GitHub repo</p><br> 
 				<a href="https://cyberstars.pro/rwanda/" target="_blank">Visit Cyber star rwanda</a> </a>
 			</div>
+			<div class="edit-project">
+				<form>
+					<input type="text" class="project-name" name="" placeholder="Write the project name"><br>
+					<input type="text" class="project-task" name="" placeholder="Write the project task"><br>
+					<textarea class="project-desc" cols="50" rows="5" placeholder="Write the project description"></textarea>
+					<input type="text" class="project-link" name="" placeholder="Write/paste the link of the project">
+				</form>
+			</div>
 		</div>
+
+		<button class="newproject">Add new Competition</button>
+
 		<div class="title-sections" id="myskills">
 			<hr style="width: 7%;">
 			<h2>Get into my Brain</h2>
@@ -123,6 +177,11 @@
 						<img src="img/c++.png" alt="c++ icon">
 						<p>C++</p>
 					</div>
+					<div class="edit-skills">
+						<input type="file" name="" id="add-new">
+						<label for="add-new">image</label>
+						<input type="text" name="" placeholder="add new">
+					</div>
 				</div>
 				<div class="section1">
 					<h3>Web Development</h3>
@@ -142,7 +201,13 @@
 						<img src="img/sql.png" alt="sql icon">
 						<p>SQL</p>
 					</div>
+					<div class="edit-skills">
+						<input type="file" name="" id="add-new">
+						<label for="add-new">image</label>
+						<input type="text" name="" placeholder="add new">
+					</div>
 				</div>
+				
 			</div>
 			<div class="row1">
 				<div class="section1">
@@ -154,6 +219,11 @@
 					<div class="skills">
 						<img src="img/linux.png" alt="linux icon">
 						<p>LINUX</p>
+					</div>
+					<div class="edit-skills">
+						<input type="file" name="" id="add-new">
+						<label for="add-new">image</label>
+						<input type="text" name="" placeholder="add new">
 					</div>
 				</div>
 				<div class="section1">
@@ -176,12 +246,23 @@
 						<img src="img/rwanda.png" alt="rwanda icon">
 						<p>Kinyarwanda</p>
 					</div>
+					<div class="edit-skills">
+						<input type="file" name="" id="add-new">
+						<label for="add-new">image</label>
+						<input type="text" name="" placeholder="add new">
+					</div>
 				</div>
 			</div>
 		</div>
-		<a href="login.html"><button id="admin-login">Admin Login</button></a>
 	</div>
 	
+
+
+
+
+
+
+
 
 </body>
 </html>
