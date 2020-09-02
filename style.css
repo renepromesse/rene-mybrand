@@ -12,7 +12,6 @@ body{
 	width: 100%;
 	display: flex;
 	height: 120px;
-	//margin-bottom: 2px;
 	align-items: flex-end;
 	justify-content: center;
 	border-bottom: 1px solid darkgrey;
@@ -33,7 +32,7 @@ body{
 	transition: 0.2s;
 }
 .nav-link:hover{
-	color: #2F73C8;// #3377CC;
+	color: #2F73C8;
 
 }
 
@@ -90,7 +89,6 @@ main{
 	font-weight: bold;
 	color: black;
 	padding:10px 50px;
-	//margin: 20px;
 	text-align: center;
 	border:none;
 	border-radius:10px;
@@ -196,7 +194,7 @@ main{
 }
 .task{
 	font-size: 15px;
-	color:green;//#8F8528;
+	color:green;
 	padding: 3px 0px 0px 3px;
 }
 .project-info{
@@ -237,7 +235,7 @@ main{
 }
 .skills p{
 	font-weight: bold;
-	color: green;//#8F8528;
+	color: green;
 	margin-left: 10px;
 	padding-right: 10px;
 }
@@ -381,7 +379,6 @@ main{
 	align-items: center;
 	margin: auto;
 	height: 60vh;
-	//border: 1px solid blue;
 	margin-top: 15%;
 }
 .login-border{
@@ -435,5 +432,15 @@ main{
 	font-weight: lighter;
 }
 
+@media screen and (max-width: 760px){
+	.login-border{
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 580px){
+	.login-border{
+		margin-top: 70px;
+	}
+}
 
 /*--------------------------------------end of admin login page------------------------*/
