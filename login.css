@@ -1,0 +1,446 @@
+*{
+	font-family: sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background: #eeeeee;
+}
+#header-home-menu{
+	background: white;
+	width: 100%;
+	display: flex;
+	height: 120px;
+	align-items: flex-end;
+	justify-content: center;
+	border-bottom: 1px solid darkgrey;
+	position: fixed;
+	top: 0;
+}
+
+#menu {
+	display: flex;
+	list-style-type: none;
+	width: 400px;
+	justify-content: space-around;
+}
+.nav-link{
+	color:black;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.2s;
+}
+.nav-link:hover{
+	color: #2F73C8;
+
+}
+
+/*-------------------------------end of menu design---------------------------*/
+main{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.presentation .imgs-intro img{
+
+	height: 30vh;
+	border: 10px solid #8F8528;
+	border-radius: 20%;
+}
+
+.presentation{
+	display: flex;
+	width: 80%;
+	height: 60vh;
+	justify-content: space-around;
+	align-items: center;
+}
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+.name-intro, .title-intro{
+	text-align:center;
+}
+.name-intro p{
+	font-size: 25px;
+}
+.name-intro h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.title-intro p{
+	font-size: 25px;
+
+}
+.title-intro h2{
+	font-size: 30px;
+	font-weight:300;
+}
+
+.view-more button{
+	background: #8F8528;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding:10px 50px;
+	text-align: center;
+	border:none;
+	border-radius:10px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.view-more button:hover{
+	color:white;
+	background: #4F4915;
+}
+/*---------------------------------------------end of main section----------------------------*/
+/*---------------------------------------------start of about page----------------------------*/
+.about-section{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	margin: auto;
+}
+.about-section p{
+	font-style: italic;
+}
+.title-sections{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.title-sections hr{
+	margin-right: 20px;
+	margin-left: 20px;
+	border-width: 2px;
+}
+.title-sections h2{
+	font-size: 30px;
+	font-weight: lighter;
+}
+.title-sections h4{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+
+.me-description{
+	width: 50%;
+	margin-bottom: 20px;
+}
+.me-description p{
+	line-height: 1.7;
+	font-style: normal;
+	font-weight: bold;
+}
+.open-quote{
+	font-size: 30px;
+	color: red;
+}
+.quotes{
+	text-align:center;
+	line-height: 1.7;
+	font-weight: bold;
+}
+.quotes .author,.quotes p{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.project-section{
+	display: flex;
+	width: 50%;
+	margin-left: -100px;
+	margin-bottom: 30px;
+}
+.project-section:hover{
+	opacity: 0.7;
+}
+.img-section{
+	margin: auto;
+	width: 60%;
+}
+.img-section img{
+	width: 200px;
+	height: 200px;
+	border-radius: 40px;
+}
+.project-description{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.project-description a{
+	text-decoration: none;
+}
+.project-description h3{
+	color: #3377CC;
+	font-size: 25px;
+	font-weight: lighter;
+	margin: 0px;
+}
+.project-description p{
+	margin: 0px;
+}
+.task{
+	font-size: 15px;
+	color:green;
+	padding: 3px 0px 0px 3px;
+}
+.project-info{
+	color: black;
+	padding: 20px 0px 0px 0px;
+
+}
+
+.section1 img{
+	width:40px;
+	height: 40px;
+}
+.skills-container{
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	margin-bottom: 200px;
+}
+
+.row1{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.section1{
+	display: flex;
+	flex-direction:column;
+	align-items: center;	
+}
+.section1 h3{
+	color: #3377CC;
+}
+.skills{
+	display: flex;
+	width: 150px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.skills p{
+	font-weight: bold;
+	color: green;
+	margin-left: 10px;
+	padding-right: 10px;
+}
+
+/*--------------------------------------start of contact page -------------------------*/
+.main-content{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	margin-top: 15%;
+
+}
+
+.contact-info{
+	display: flex;
+	justify-content: space-around;
+
+}
+.contact-section, .message-section{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	width: 50vh;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+.contact-section img{
+	height: 5vh;
+	widows: 5vh;
+}
+
+.contact-section h3{
+	font-size: 20px;
+	font-weight: lighter;
+	padding:0px 0px 5px 30px;
+}
+.main-content a{
+	text-decoration: none;
+	font-size: 16px;
+	padding-top: 0px;
+	color: #3377CC;
+
+}
+
+.contact-section p{
+	text-align: center;
+}
+
+.connect-link{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	margin: 0px 0px 0px 50px;
+}
+
+
+.message-section h3{
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+.message-section input[type=text],.message-section input[type=email],.message-section textarea,.message-section button{
+	width:70%;
+	padding:10px;
+	margin: 0px 0px 20px 0px;
+	border:2px solid #ccc;
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 10px;
+}
+.message-section button{
+	width: 50%;
+	color: white;
+	background: #000;
+	opacity: 0.5;
+	font-size: 20px;
+	cursor: pointer;
+	border:none;
+}
+.message-section button:hover{
+	opacity: 0.7;
+}
+.message-section form{
+	text-align:center;
+}
+/*------------------------------------End of contact page-----------------------*/
+/*------------------------------------Start of blog page -----------------------*/
+
+.title-sections #blog-title{
+	font-size: 35px;
+}
+.article-container{
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	margin: 2% 0% 0% 12%;
+}
+.article-section{
+	display: flex;
+	padding: 10px;
+
+}
+.article-section img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border:2px solid #8F8528;
+}
+.article-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding:0px 0px 0px 20px;
+}
+.article-title h2{
+	font-size: 25px;
+	font-weight: lighter;
+	color: #50555c;
+}
+.article-info{
+	display: flex;
+}
+.article-info p{
+	padding: 5px 20px 0px 0px; 
+	font-size: 14px;
+	color: #5E9516;
+}
+.article-title h2,.article-info p{
+	margin: 0px;
+}
+.article-section a{
+	text-decoration: none;
+}
+/*------------------------------------- end of blog page=------------------------------*/
+/*------------------------------------- Start of login page----------------------------*/
+.main-login{
+	display: flex;
+	width: 90%;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 60vh;
+	margin-top: 15%;
+}
+.login-border{
+	border: 1px solid black;
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	padding:20px 20px;
+	justify-content: center;
+	width: 50vh;
+}
+.login-border input[type=email],.login-border input[type=password]{
+	border:2px solid lightgrey;
+	width: 70%;
+	font-size: 20px;
+	padding:7px 0px 7px 10px;
+	border-radius: 10px;
+
+}
+.login-border input[type=password]{
+	margin:20px 0px 0px 0px;
+}
+
+.login-border input[type=email]:focus,.login-border input[type=password]:focus{
+	border:2px solid #8F8528;
+	transition:0.3s;
+	border-radius: 5px;
+}
+.login-border button{
+	width: 70%;
+	background: #000000;
+	opacity: 0.5;
+	font-size: 20px;
+	font-weight: bold;
+	color:white;
+	padding:7px 0px 7px 0px;
+	margin: 30px 0px 20px 0px;
+	text-align: center;
+	border:2px solid black;
+	border-radius:10px;
+	cursor: pointer;
+	transition: 0.4s;
+	
+}
+
+.login-border button:hover{	
+	opacity: 0.7;
+}
+.login-border h3{
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 760px){
+	.login-border{
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 580px){
+	.login-border{
+		margin-top: 70px;
+	}
+}
+
+/*--------------------------------------end of admin login page------------------------*/
