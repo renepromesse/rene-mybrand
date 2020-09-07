@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>landing page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu-style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<header id="header-home-menu">
-			<nav>
-				<ul id="menu">
-					<li><a href="#presentation" class="nav-link">HOME</a></li>
-					<li><a href="#about-me" class="nav-link">ABOUT</a></li>
-					<li><a href="blog.html" class="nav-link">BLOG</a></li>
-					<li><a href="contact-page.html" class="nav-link">CONTACT</a></li>
-				</ul>
-			</nav>
+		<button id="menu-button" >Menu</button>
+		<nav id="nav-menu">
+			<ul id="menu">
+				<li><a href="#presentation" class="nav-link">HOME</a></li>
+				<li><a href="#about-me" class="nav-link">ABOUT</a></li>
+				<li><a href="#" class="nav-link">BLOG</a></li>
+				<li><a href="#" class="nav-link">CONTACT</a></li>
+				<li><a href="./html/login.html" class="nav-link">Login</a></li>
+			</ul>
+		</nav>
 		
 	</header>
+
 	<main id="presentation">
 		<div class="presentation" >
-			`<div class="intro">`
+			<div class="intro">
 				<div class="name-intro">
 					<i><p>Hey I'm</p></i>
 					<h1>Rene Promesse Ntirenganya.</h1>
@@ -210,7 +215,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="login.html"><button id="admin-login">Admin Login</button></a>
+		<a href="./html/login.html"><button id="admin-login">Admin Login</button></a>
 	</div>
 
 
@@ -232,6 +237,22 @@
 		firebase.initializeApp(firebaseConfig);
 		//const db = firebase.firestore();
 		//db.settings({timestampsInSnapshots: true});
+	</script>
+	<script type="text/javascript">
+
+
+		//show and hide the menu
+		let nav= document.getElementById("nav-menu");
+
+		document.getElementById("menu-button").addEventListener("click",()=>{
+			if(nav.style.display=="block"){
+				nav.style.display="none";
+			}
+			else{
+				nav.style.display="block";
+			}
+		});
+		
 	</script>
 		
 	<script src="profile.js"></script>
