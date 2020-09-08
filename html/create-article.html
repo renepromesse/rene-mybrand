@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Create and edit articles</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="../css/create-article.css">
+	</head>
 <body>
-	<header id="header-home-menu">
-			<nav>
-				<ul id="menu">
-					<li><a href="landing-page.html#presentation" class="nav-link">HOME</a></li>
-					<li><a href="#" class="nav-link">ARTICLES</a></li>
-					<li><a href="view-message.html" class="nav-link">MESSAGES</a></li>
-					<li><a href="#" class="nav-link">Logout</a></li>
-				</ul>
-			</nav>
+	<header id="header-home-menu" style="z-index: 2;">
+		<button id="menu-button" >Menu</button>
+		<nav id="nav-menu">
+			<ul id="menu">
+				<li><a href="../index.html" class="nav-link">HOME</a></li>
+				<li><a href="#" class="nav-link">Articles</a></li>
+				<li><a href="#" class="nav-link">Messages</a></li>
+				<li><a href="#" class="nav-link">Logout</a></li>
+			</ul>
+		</nav>
 		
 	</header>
 	<div class="articles">
@@ -29,7 +31,7 @@
 			<button id="create-article">Create new article</button>
 			<div class="article-space">
 				<form>
-					<input type="file" accept=".png,.jpg,.jpeg,.gif,.jiff" name="filed" id="files">
+					<input type="file" accept="image/*" name="filed" id="files">
 					<label for="files" id="labelfile"> Click to Choose a cover image</label><br><br>
 					<input type="text" name="" placeholder="Title of the article"><br>
 					<textarea class="write-article" cols="40" rows="15" placeholder="Write the article here"></textarea><br>
@@ -47,13 +49,9 @@
 			<hr style="width: 7%;">
 		</div>
 
-		<br>
-		<br>
-		<br>
-
 		<div class="old-articles-section">
 			<div class="article-img">
-				<img src="img/prof-img.png" alt="dr king">
+				<img src="../img/prof-img.png" alt="dr king">
 			</div>
 			<div class="article-info">
 				<div class="article-title">
@@ -68,7 +66,7 @@
 		</div>
 		<div class="old-articles-section">
 			<div class="article-img">
-				<img src="img/prof-img.png" alt="dr king">
+				<img src="../img/prof-img.png" alt="dr king">
 			</div>
 			<div class="article-info">
 				<div class="article-title">
@@ -83,7 +81,7 @@
 		</div>
 		<div class="old-articles-section">
 			<div class="article-img">
-				<img src="img/prof-img.png" alt="dr king">
+				<img src="../img/prof-img.png" alt="dr king">
 			</div>
 			<div class="article-info">
 				<div class="article-title">
@@ -123,6 +121,22 @@
 			}
 
 		});
+	</script>
+	<script type="text/javascript">
+
+
+		//show and hide the menu
+		let nav= document.getElementById("nav-menu");
+
+		document.getElementById("menu-button").addEventListener("click",()=>{
+			if(nav.style.display=="block"){
+				nav.style.display="none";
+			}
+			else{
+				nav.style.display="block";
+			}
+		});
+		
 	</script>
 </body>
 </html>
