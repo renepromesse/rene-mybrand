@@ -12,7 +12,7 @@
 #menu {
 	display: flex;
 	list-style-type: none;
-	width: 400px;
+	width: 800px;
 	justify-content: space-around;
 }
 .nav-link{
