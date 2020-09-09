@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Read messages</title>
+		<link rel="stylesheet" type="text/css" href="../css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="../css/view-message.css">
+	</head>
+<body>
+	<header id="header-home-menu">
+		<button id="menu-button" >Menu</button>
+		<nav id="nav-menu">
+			<ul id="menu">
+				<li><a href="../index.html" class="nav-link">HOME</a></li>
+				<li><a href="./create-article.html" class="nav-link">Articles</a></li>
+				<li><a href="#" class="nav-link">Messages</a></li>
+				<li><a href="#" class="nav-link">Logout</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	<div class="all-messages">
+		
+		<div class="title-sections">
+			<hr style="width: 7%;">
+			<h4>Messages</h4>
+			<hr style="width: 7%;">
+		</div>
+		<div id="messages">
+			<div class="comment-section">
+				<div class="comment-img">
+					<img src="../img/prof-img.png" width="70px" height="70px" alt="dr king">
+				</div>
+				<div class="comment-title">
+					<div class="name-reply">
+						<h2>Prototype</h2>
+						<a href="#">Reply</a>
+					</div>
+					
+					<p class="comment-date">January 20, 2020</p>
+					<p class="comment">Don't worry, this messages are comming from the contact page</p>  
+				</div>
+			</div>
+			<div class="comment-section">
+				<div class="comment-img">
+					<img src="../img/prof-img.png" width="70px" height="70px" alt="dr king">
+				</div>
+				<div class="comment-title">
+					<div class="name-reply">
+						<h2>Prototype</h2>
+						<a href="#">Reply</a>
+					</div>
+					
+					<p class="comment-date">January 20, 2020</p>
+					<p class="comment">Don't worry, this messages are comming from the contact page</p>  
+				</div>
+			</div>
+			<div class="comment-section">
+				<div class="comment-img">
+					<img src="../img/prof-img.png" width="70px" height="70px" alt="dr king">
+				</div>
+				<div class="comment-title">
+					<div class="name-reply">
+						<h2>Prototype</h2>
+						<a href="#">Reply</a>
+					</div>
+					
+					<p class="comment-date">January 20, 2020</p>
+					<p class="comment">Don't worry, this messages are comming from the contact page</p>  
+				</div>
+			</div>
+		</div>
+		<div class="comment-section">
+			<div class="comment-img">
+				<img src="../img/admin.png" width="70px" height="70px" alt="admin image">
+			</div>
+			<div class="comment-form">
+				<form>
+					<textarea cols="70" rows="5" placeholder="Write your response here ..." ></textarea>
+					<div class="form-inputs">
+						<br>
+						<div class="form-buttons">
+							<button>Send</button>
+						</div>
+						
+					</div>
+				</form> 
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+
+		//show and hide the menu
+		let nav= document.getElementById("nav-menu");
+
+		document.getElementById("menu-button").addEventListener("click",()=>{
+			if(nav.style.display=="block"){
+				nav.style.display="none";
+			}
+			else{
+				nav.style.display="block";
+			}
+		});
+		
+	</script>
+
+
+</body>
+</html>
