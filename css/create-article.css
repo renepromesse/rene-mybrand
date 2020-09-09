@@ -1,0 +1,233 @@
+*{
+	font-family: sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background: #eeeeee;
+}
+
+/*------------------------------------------Start of the create article design---------------------------------*/
+.articles {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 140px;
+	width: auto;
+}
+
+
+.title-sections{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.title-sections hr{
+	margin-right: 20px;
+	margin-left: 20px;
+	border-width: 2px;
+}
+.title-sections h4{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+
+
+
+
+.new-article-section{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: auto;
+	margin: 20px auto;
+	height: auto;
+	overflow: auto;
+}
+
+#create-article{
+	width: 80%;
+	padding: 10px 0px;
+	color: white;
+	background:#3377CC;
+	font-size: 15px;
+	cursor: pointer;
+	border:none;
+	border-radius: 8px;
+	margin: auto;
+}
+
+.article-space{
+	margin: 10px 0px;
+	background: rgba(100,100,100,0.3);
+	padding: 20px;
+	padding-top: 50px;
+	outline: none;
+	border-radius: 10px;
+	max-height: 0;
+	overflow: hidden;
+	display: none;
+	text-align: center;
+	transition:max-height 0.5s ease-out;
+	position: relative;
+}
+.article-space input[type=text]{
+	width: 100%;
+	padding:10px;
+	margin: 0px 0px 20px 0px;
+	border:2px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-size: 20px;
+}
+.write-article{
+	width:100%;
+	padding:10px;
+	margin: 0px 0px 20px 0px;
+	border:2px solid #ccc;
+	box-sizing: border-box;
+	resize: vertical;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.article-space button{
+	width: 150px;
+	padding: 10px 0px;
+	color: white;
+	background: rgba(0,0,0,0.70);
+	font-size: 15px;
+	cursor: pointer;
+	border:none;
+	border-radius: 20px;
+}
+
+.article-space button:hover{
+	background: rgba(0,0,0,0.90);
+	font-weight: bolder;
+	transition: 0.2s;
+}
+.old-articles-section{
+	display: flex;
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #3377CC;
+	border-radius: 20px;
+}
+.article-img img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	border:2px solid #8F8528; 
+}
+
+.article-info{
+	display: flex;
+	flex-direction: column;
+
+}
+.article-title h2{
+	font-size: 20px;
+}
+
+
+.edit-delete{
+	display: flex;
+}
+
+.edit,.delete{
+	font-size: 16px;
+	margin-left: 20px;
+}
+.edit:hover,.delete:hover{
+	cursor: pointer;
+}
+.edit{
+	color: green;
+}
+.delete{
+	color: red;
+}
+
+.article-space #files{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+}
+.article-space #labelfile{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #3377CC;
+	color: white;
+	font-size: 20px;
+	padding: 20px 10px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+
+}
+.article-space #labelfile:hover{
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px){
+	.new-article-section{
+		width: 70%;
+	}
+	.old-articles-section{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.new-article-section{
+		width: 90%;
+	}
+	.old-articles-section{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.articles{
+		margin-top: 30px;
+	}
+	.new-article-section{
+		width: 100%;
+	}
+	.title-sections h4{
+		text-align: center;
+		font-size: 18px;
+	}
+	.old-articles-section{
+		width: 90%;
+	}
+	.article-info{
+		width: 90%;
+		margin: auto;
+	}
+	.title-sections{
+		width: 100%;
+	}
+	.article-title h2{
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+/*----------------------------------------end of the crate article page -----------------------*/
+
+
