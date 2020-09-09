@@ -20,6 +20,7 @@
 	text-decoration: none;
 	font-size: 20px;
 	transition: 0.2s;
+	margin-right: 10px;
 }
 .nav-link:hover{
 	color: #2F73C8;
