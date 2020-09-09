@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>landing page</title>
-	<link rel="stylesheet" type="text/css" href="./css/menu-style.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Profile</title>
+		<link rel="stylesheet" type="text/css" href="../css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="../css/profile.css">
+	</head>
 <body>
-	<header id="header-home-menu">
+	<header id="header-home-menu" style="z-index: 2;">
 		<button id="menu-button" >Menu</button>
 		<nav id="nav-menu">
 			<ul id="menu">
-				<li><a href="#presentation" class="nav-link">HOME</a></li>
-				<li><a href="#about-me" class="nav-link">ABOUT</a></li>
-				<li><a href="./html/blog.html" class="nav-link">BLOG</a></li>
-				<li><a href="./html/contact.html" class="nav-link">CONTACT</a></li>
-				<li><a href="./html/login.html" class="nav-link">LOGIN</a></li>
-				<li><a href="./html/create-article.html" class="nav-link">ARTICLES</a></li>
-				<li><a href="./html/profile.html" class="nav-link">PROFILE</a></li>
+				<li><a href="../index.html" class="nav-link">HOME</a></li>
+				<li><a href="./create-article.html" class="nav-link">ARTICLES</a></li>
+				<li><a href="#" class="nav-link">MESSAGES</a></li>
+				<li><a href="#" class="nav-link">LOGOUT</a></li>
 			</ul>
 		</nav>
 		
 	</header>
-
 	<main id="presentation">
 		<div class="presentation" >
 			<div class="intro">
 				<div class="name-intro">
 					<i><p>Hey I'm</p></i>
 					<h1>Rene Promesse Ntirenganya.</h1>
+					<div class="edit-section">
+						<form>
+							<input type="text" id="name" name="" placeholder="Write your name">
+						</form>
+					</div>
 				</div>
 				<div class="title-intro">
 					<p>I'm a</p>
 					<h2>Software Engineer</h2>
+					<div class="edit-section">
+						<form>
+							<input type="text" id="profession" name="" placeholder="Write your Profession"><br>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="imgs-intro">
-				<a href="#myskills"><img src="./img/rene.jpeg" style="border-radius: 10px;" height="300px" alt="Rene Promesse image"></a>
+				<a href="#myskills"><img src="../img/rene.jpeg" style="border-radius: 10px;" height="300px" alt="Rene Promesse image"></a>
+				<div class="edit-img">
+					<form>
+						<input type="file" name="" id="profile-img">
+						<label for="profile-img">Edit</label>
+					</form>	
+				</div>
 			</div>
 		</div>
 		<div class="view-more">
@@ -57,6 +69,11 @@
 				<i class="open-quote">"</i> I'm aaaan allround Softwate developer. I'm a senior programmer with good knowledge of both front-end and back-end techniques. I stand for quality and I often improve my speed by doing 'Competitive Programming' as a Hobby. I love spending time on fixing little details and optimizing web apps. Also I like working in a team. <br> 
 				As the saying goes: 'two heads are better than one'.<i class="open-quote">"</i>
 			</p>
+			<div class="edit-about">
+				<form>
+					<textarea cols="30" rows="10" placeholder="Write the description about you and your profession"></textarea>
+				</form>
+			</div>
 		</div>
 		<div class="title-sections">
 			<hr style="width: 7%;">
@@ -76,9 +93,11 @@
 		
 		<div class="project-section">
 			<div class="img-section">
-				<a href="https://www.github.com/renepromesse" target="_blank"><img src="./img/rene.jpeg" alt="Rene image"></a>
+				<a href="https://www.github.com/renepromesse" target="_blank"><img src="../img/rene.jpeg" alt="Rene image"></a>
+				<input type="file" accept="image/*" name="" id="project-img" style="display: none;">
+				<label for="project-img">Edit</label>
 			</div>
-			<div class="project-description">
+			<div class="project-description" style="display: none;">
 				<a href="https://www.github.com/renepromesse" target="_blank"><h3>Personal Blog</h3>
 				<p class="task">Design & implementation in 2020</p></a>
 				<a href="#">
@@ -93,10 +112,18 @@
 				You can find the source codes on my GitHub repo</p></a><br> 
 				<p id="link"><a href="https://www.github.com/renepromesse" target="_blank" > my project on githubgithubgithubgi thubgithubgit hubgithubgithubgithu bgithubgithub</a></p>
 			</div>
+			<div class="project-description">
+				<form>
+					<input type="text" class="project-name" name="" placeholder="Write the project name"><br>
+					<input type="text" class="project-task" name="" placeholder="Write the project task"><br>
+					<textarea class="project-desc" cols="50" rows="7" placeholder="Write the project description"></textarea>
+					<input type="text" class="project-link" name="" placeholder="Write/paste the link of the project">
+				</form>
+			</div><!---->
 		</div>
 		<div class="project-section">
 			<div class="img-section">
-				<a href="https://www.github.com/renepromesse" target="_blank"><img src="./img/rene.jpeg" alt="Rene image"></a>
+				<a href="https://www.github.com/renepromesse" target="_blank"><img src="../img/rene.jpeg" alt="Rene image"></a>
 			</div>
 			<div class="project-description">
 				<a href="https://www.github.com/renepromesse" target="_blank"><h3>Personal Blog</h3>
@@ -122,7 +149,7 @@
 		</div>
 		<div class="project-section">
 			<div class="img-section">
-				<a href="https://cyberstars.pro/rwanda/" target="_blank"><img src="./img/cyberstars.jpg" alt="Rene image"></a>
+				<a href="https://cyberstars.pro/rwanda/" target="_blank"><img src="../img/cyberstars.jpg" alt="Rene image"></a>
 			</div>
 			<div class="project-description">
 				<a href="https://cyberstars.pro/rwanda/" target="_blank"><h3>Cyber Star Rwanda</h3>
@@ -151,95 +178,104 @@
 		</div>
 		<div class="skills-container">
 			<div class="row1">
-				<div class="section1">
+				<div class="section1" style="border: 1px solid red; padding-bottom: 25px;">
 					<h3>Programming Languages</h3>
+					<span class="dlt-section">X</span>
+					<span class="sv-skill">save</span>
 					<div class="skills">
-						<img src="./img/python.png" alt="python icon">
+						<img src="../img/python.png" alt="python icon">
 						<p>PYTHON</p>
+						<span class="dlt-skill" title="delete this skill">X</span>
 					</div>
 					<div class="skills">
-						<img src="./img/c++.png" alt="c++ icon">
+						<img src="../img/c++.png" alt="c++ icon">
 						<p>C++</p>
+						<span class="dlt-skill" title="delete this skill">X</span>
+
+					</div>
+					<div class="edit-skills">
+						<input type="file" name="" id="add-new" style="display: block;">
+						<label for="add-new">choose icon</label>
+						<input type="text" name="" placeholder="add new skills">
+					</div>
+					<div class="dlt-modal" style="display: none;">
+						<p>Do you want to delete this section?</p>
+						<span id="ys">Yes</span>
+						<span id="no">No</span>
 					</div>
 				</div>
 				<div class="section1">
 					<h3>Web Development</h3>
 					<div class="skills">
-						<img src="./img/html.png" alt="html icon">
+						<img src="../img/html.png" alt="html icon">
 						<p>HTML5</p>
 					</div>
 					<div class="skills">
-						<img src="./img/css.png" alt="css icon">
+						<img src="../img/css.png" alt="css icon">
 						<p>CSS3</p>
 					</div>
 					<div class="skills">
-						<img src="./img/javascript.png" alt="javascript icon">
+						<img src="../img/javascript.png" alt="javascript icon">
 						<p>JAVASCRIPT</p>
 					</div>
 					<div class="skills">
-						<img src="./img/sql.png" alt="sql icon">
+						<img src="../img/sql.png" alt="sql icon">
 						<p>SQL</p>
 					</div>
 				</div>
+				<!-- adding new section part button later
+				<div class="section1"  style="border: 1px solid red;">
+					<h3>Create new Section</h3>
+					<div class="skills">
+						<img src="img/windows.png" alt="windows icon">
+						<p>WINDOWS</p>
+					</div>
+					<div class="skills">
+						<img src="img/linux.png" alt="linux icon">
+						<p>LINUX</p>
+					</div>
+				</div>-->
+				
 			</div>
 			<div class="row1">
 				<div class="section1">
 					<h3>Systems</h3>
 					<div class="skills">
-						<img src="./img/windows.png" alt="windows icon">
+						<img src="../img/windows.png" alt="windows icon">
 						<p>WINDOWS</p>
 					</div>
 					<div class="skills">
-						<img src="./img/linux.png" alt="linux icon">
+						<img src="../img/linux.png" alt="linux icon">
 						<p>LINUX</p>
 					</div>
 				</div>
 				<div class="section1">
 					<h3>Languages</h3>
 					<div class="skills">
-						<img src="./img/english.png" alt="english icon">
+						<img src="../img/english.png" alt="english icon">
 						<p>English</p>
 					</div>
 					<div class="skills">
-						<img src="./img/french.png" alt="french icon">
+						<img src="../img/french.png" alt="french icon">
 						<p>French</p>
 					</div>
 					<div class="skills">
-						<img src="./img/german.png" alt="german icon">
+						<img src="../img/german.png" alt="german icon">
 						<p>German</p>
 					</div>
 					<div class="skills">
-						<img src="./img/burundi.png" alt="burundi icon">
+						<img src="../img/burundi.png" alt="burundi icon">
 						<p>Kirundi</p>
-						<img src="./img/rwanda.png" alt="rwanda icon">
+					</div>
+					<div class="skills">
+						<img src="../img/rwanda.png" alt="rwanda icon">
 						<p>Kinyarwanda</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="./html/login.html"><button id="admin-login">Admin Login</button></a>
 	</div>
-
-
-	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-
-	<!-- Initialize Firebase -->
-	<script type="text/javascript">
-		const firebaseConfig = {
-			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
-			authDomain: "rene-mybrand.firebaseapp.com",
-			databaseURL: "https://rene-mybrand.firebaseio.com",
-			projectId: "rene-mybrand",
-			storageBucket: "rene-mybrand.appspot.com",
-			messagingSenderId: "490414408541",
-			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
-			measurementId: "G-JXQFNRJY8M"
-		};
-		firebase.initializeApp(firebaseConfig);
-		//const db = firebase.firestore();
-		//db.settings({timestampsInSnapshots: true});
-	</script>
+	<button id="save">Save</button>
 	<script type="text/javascript">
 
 
@@ -256,7 +292,5 @@
 		});
 		
 	</script>
-		
-	<script src="profile.js"></script>
 </body>
 </html>
