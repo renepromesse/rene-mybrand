@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="../css/menu-style.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+</head>
+<body>
+	<header id="header-home-menu">
+		<button id="menu-button" >Menu</button>
+		<nav id="nav-menu">
+			<ul id="menu">
+				<li><a href="../index.html" class="nav-link">HOME</a></li>
+				<li><a href="./blog.html" class="nav-link">BLOG</a></li>
+				<li><a href="#" class="nav-link">CONTACT</a></li>
+				<li><a href="./login.html" class="nav-link">Login</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+<div class="main-content">
+	<div class="title-sections">
+		<hr style="width: 7%;">
+		<h2>Connect with me</h2>
+		<hr style="width:7%;">
+	</div>
+	<div class="quotes">
+		<p><i class="open-quote">“</i>If I had asked people what they wanted, they would have said faster horses.<i class="open-quote">”</i></p>
+		<p class="author">- Henry Ford</p>
+	</div>
+	<div class="contact-info">
+		<div class="contact-section">
+			<h3>Let's Connect on:</h3>
+			<div class="connect-link">
+				<a href="https://twitter.com/PromRene" target="_blank"><img src="../img/twitter icon.png" width="30px" height="30px" alt="twitter icon"></a><a href="https://twitter.com/PromRene" target="_blank">@PromRene</a>
+			</div>
+			<div class="connect-link">
+				<a href="https://www.linkedin.com/in/rene-promesse-ntirenganya-1a1409169" target="_blank"><img src="../img/linkedin icon.png" width="35px" height="35px" alt="linkedin icon"></a><a href="https://www.linkedin.com/in/rene-promesse-ntirenganya-1a1409169" target="_blank">Rene Promesse Ntirenganya</a>
+			</div>
+			<div class="connect-link">
+				<a href="https://www.instagram.com/rene_promesse/" target="_blank"><img src="../img/insta icon.png" width="40px" height="40px" alt="instagram icon"></a><a href="https://www.instagram.com/rene_promesse/" target="_blank">@rene_promesse</a>
+			</div>
+			<h3>Or You can reach out to me directly</h3>
+			<p>Call 0789106816 Mon - Fri 09AM - 05PM </p>
+			<p>Rwanda - Bugesera - Nyamata</p>
+		</div>
+		<div class="message-section">
+			<h3>Or Send me a Message</h3>
+			<form>
+				<input type="text" name="" placeholder="Name"><br>
+				<input type="email" name="" placeholder="Email"><br>
+				<textarea rows="10" cols="50" placeholder="Write your message here"></textarea><br>
+				<button>Send</button>
+			</form>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+
+
+	//show and hide the menu
+	let nav= document.getElementById("nav-menu");
+
+	document.getElementById("menu-button").addEventListener("click",()=>{
+		if(nav.style.display=="block"){
+			nav.style.display="none";
+		}
+		else{
+			nav.style.display="block";
+		}
+	});
+	
+</script>
+</body>
+</html>
