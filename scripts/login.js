@@ -1,7 +1,7 @@
 const db=firebase.firestore();
 const auth= firebase.auth();
-//email: winny@gmail.com
-//password: winny1234
+//email: rene@gmail.com
+//password: rene1234
 const form_login= document.getElementById("login-form");
 form_login.addEventListener('submit', event =>{
     event.preventDefault();
