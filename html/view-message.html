@@ -14,7 +14,7 @@
 				<li><a href="../index.html" class="nav-link">HOME</a></li>
 				<li><a href="./create-article.html" class="nav-link">ARTICLES</a></li>
 				<li><a href="#" class="nav-link">MESSAGES</a></li>
-				<li><a href="#" class="nav-link">LOGOUT</a></li>
+				<li><a href="javascript:void(0)" id="logout" class="nav-link">LOGOUT</a></li>
 			</ul>
 		</nav>
 		
@@ -88,6 +88,56 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+	<!-- firebase intergration -->
+
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		
+	<!-- Initialize Firebase -->
+	<script type="text/javascript">
+		const firebaseConfig = {
+			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+			authDomain: "rene-mybrand.firebaseapp.com",
+			databaseURL: "https://rene-mybrand.firebaseio.com",
+			projectId: "rene-mybrand",
+			storageBucket: "rene-mybrand.appspot.com",
+			messagingSenderId: "490414408541",
+			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+			measurementId: "G-JXQFNRJY8M"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const auth=firebase.auth();
+		const db= firebase.firestore();
+
+	</script>
+		
+	<script src="../scripts/messages.js"></script>
+	<script src="../scripts/logout.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	<script type="text/javascript">

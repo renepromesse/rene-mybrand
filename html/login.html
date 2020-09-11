@@ -21,13 +21,56 @@
 	<div class="main-login">
 		<div class="login-border">
 			<h3>Admin Login</h3>
-			<form>
-				<input type="email" placeholder="Email" name=""><br>
-				<input type="password" placeholder="Password" name=""><br>
+			<form id="login-form">
+				<input type="email" placeholder="Email" id="email" name=""><br>
+				<input type="password" placeholder="Password" id="password" name=""><br>
 				<button>Login</button>
 			</form>
 		</div>
 	</div>
+
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		
+	<!-- Initialize Firebase -->
+	<script type="text/javascript">
+		const firebaseConfig = {
+			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+			authDomain: "rene-mybrand.firebaseapp.com",
+			databaseURL: "https://rene-mybrand.firebaseio.com",
+			projectId: "rene-mybrand",
+			storageBucket: "rene-mybrand.appspot.com",
+			messagingSenderId: "490414408541",
+			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+			measurementId: "G-JXQFNRJY8M"
+		};
+		firebase.initializeApp(firebaseConfig);
+
+	</script>
+		
+	<script src="../scripts/login.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<script type="text/javascript">
 
@@ -46,5 +89,20 @@
 		
 	</script>
 		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
