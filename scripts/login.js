@@ -8,17 +8,10 @@ form_login.addEventListener('submit', event =>{
     const email= form_login['email'].value;
     const password= form_login['password'].value;
     if(email != "" && password !=""){
-        auth.signInWithEmailAndPassword(email,password).then( cred =>{
-            console.log('this user logged in: '+cred.user);
+        auth.signInWithEmailAndPassword(email,password).then( () =>{
             location.replace('./create-article.html');
         })
-    }else{
-        console.log('Please enter correct email and password');
-        //document.getElementById('errors').innerHTML="Please check your network or creds";
     }
-
-
-
 
     form_login.reset();
 });
@@ -28,10 +21,6 @@ form_login.addEventListener('submit', event =>{
 auth.onAuthStateChanged( user =>{
     if(user){
         location.replace('./create-article.html');
-    }
-    else{
-        //document.getElementById('errors').innerHTML="Admin Login";
-        console.log('The user is not logged in');
     }
 });
 

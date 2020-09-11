@@ -1,9 +1,8 @@
 auth.onAuthStateChanged(user =>{
     if(user){
-       console.log('user is still in'); 
+        continue;
     }
     else{
-        console.log('user not in');
         location.replace('./login.html');
     }
 })
