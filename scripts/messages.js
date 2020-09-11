@@ -1,6 +1,6 @@
 auth.onAuthStateChanged(user =>{
     if(user){
-        continue;
+        return 1;
     }
     else{
         location.replace('./login.html');
