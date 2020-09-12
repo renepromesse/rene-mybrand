@@ -9,9 +9,9 @@
 	<div class="top-img">
 		<div class="top-backgrnd">
 			<div class="top-title">
-				<h1>
+				<!--<h1>
 					13 reasons to create a blog (plus 5 great reasons not to)
-				</h1>
+				</h1>-->
 				
 			</div>
 		</div>
@@ -19,11 +19,11 @@
 	<a href="../index.html"><button class="return-home" href="">< Return to Site</button></a>
 	<div class="article-start">
 		<div class="dates">
-			<p>January 20, 2020</p>
-			<hr>
+			<!--<p>January 20, 2020</p>
+			<hr>-->
 		</div>
 		<div class="main-article">
-			<p>Dear Dr. King,<br><br>
+			<!--<p>Dear Dr. King,<br><br>
 
 				Happy belated 91st birthday, sir.<br><br>
 
@@ -43,7 +43,7 @@
 
 
 				So, where do we go from here? Chaos or Community? It’s easy to give in to hatred and bitterness, and give up on ideals. But like you, I believe in reconciliation. I believe in redemption. I believe in our ability to grow into better versions of ourselves.<br><br>
-			</p>
+			</p>-->
 		</div>
 		<div class="article-end">
 			<hr>
@@ -65,7 +65,10 @@
 			<h4>Comments</h4>
 			<hr style="width: 7%;">
 		</div>
-		<div class="comment-section">
+		<div id="cmmts">
+
+		</div>
+		<!--<div class="comment-section">
 			<div class="comment-img">
 				<img src="../img/prof-img.png" alt="dr king">
 			</div>
@@ -84,20 +87,20 @@
 				<p class="comment-date">January 20, 2020</p>
 				<p class="comment">Hey man, cool site. I'm looking for inspiration for a personal site and I like yours a lot.</p>  
 			</div>
-		</div>
+		</div>-->
 		<div class="comment-section">
 			<div class="comment-img">
 				<img src="../img/prof-img.png" alt="dr king">
 			</div>
 			<div class="comment-form">
-				<form>
-					<textarea cols="70" rows="5" placeholder="Write you comment ..." ></textarea>
+				<form id="add-comment">
+					<textarea cols="70" rows="5" name="comment" placeholder="Write you comment ..." ></textarea>
 					<div class="form-inputs">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email"><br>
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="email" placeholder="Email"><br>
 						<div class="form-buttons">
-							<button>Submit</button>
-							<button>Cancel</button>
+							<button id="submit_comment">Submit</button>
+							<button type="reset">Cancel</button>
 						</div>
 						
 					</div>
@@ -106,5 +109,40 @@
 		</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+	
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		
+	<!-- Initialize Firebase -->
+	<script type="text/javascript">
+		const firebaseConfig = {
+			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+			authDomain: "rene-mybrand.firebaseapp.com",
+			databaseURL: "https://rene-mybrand.firebaseio.com",
+			projectId: "rene-mybrand",
+			storageBucket: "rene-mybrand.appspot.com",
+			messagingSenderId: "490414408541",
+			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+			measurementId: "G-JXQFNRJY8M"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const db=firebase.firestore();
+
+	</script>
+		
+	<script src="../scripts/read.js"></script>
+
+
+
 </body>
 </html>
