@@ -1,5 +1,5 @@
 
-//get form and send button
+//get form and send data to the admin
 let form_message= document.getElementById("send-message");
 
 form_message.addEventListener('submit', (event)=>{
@@ -51,8 +51,7 @@ form_message.addEventListener('submit', (event)=>{
         notification.style.background="transparent";
     }
     
-    
-    console.log("send clicked");
+
 });
 
 
