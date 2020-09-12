@@ -29,7 +29,7 @@ function outputResults(doc){
         <a href=`+url+` target="_blank"><h2>`+doc.data().title+`</h2></a>
         <div class="article-info">
             <a href=`+url+` target="_blank"><p>`+doc.data().post_date+`</p> </a> 
-            <a href=`+url+` target="_blank"><p>`+doc.data().num_comments+`comments</p></a> 
+            <a href=`+url+` target="_blank"><p>`+doc.data().num_comments+` comments</p></a> 
         </div>
     </div>
     </div>
