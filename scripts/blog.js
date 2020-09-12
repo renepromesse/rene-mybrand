@@ -5,7 +5,7 @@
 
 /*-------------------requesting blog posts-------------*/
 
-db.collection('articles').onSnapshot((snapshot) => {
+db.collection('articles').get().then((snapshot) => {
     snapshot.docs.forEach(doc =>{
         outputResults(doc);
     })
@@ -23,7 +23,7 @@ function outputResults(doc){
     let elm=`
     <div class="article-section">
     <div class="article-img">
-        <a href=`+url+` target="_blank"><img src="../img/drking.PNG" alt="dr king"></a>
+        <a href=`+url+` target="_blank"><img src="`+doc.data().img+`" alt="the image of the blog post"></a>
     </div>
     <div class="article-title">
         <a href=`+url+` target="_blank"><h2>`+doc.data().title+`</h2></a>
