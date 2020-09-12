@@ -113,7 +113,7 @@ function outputResults(doc){
     article_title.setAttribute('class','article-title');
     edit_delete.setAttribute('class','edit-delete');
     edit_delete.setAttribute('data-id',doc.id);
-    img.setAttribute('src','../img/prof-img.png');
+    img.setAttribute('src',doc.data().img);
     edit.setAttribute('class','edit');
     dlt.setAttribute('class','delete');
     
