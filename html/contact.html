@@ -46,10 +46,10 @@
 			<p>Rwanda - Bugesera - Nyamata</p>
 		</div>
 		<div class="message-section">
-			<h3>Or Send me a Message</h3>
-			<form>
-				<input type="text" name="" placeholder="Name"><br>
-				<input type="email" name="" placeholder="Email"><br>
+			<h3 id="notification">Or Send me a Message</h3>
+			<form id="send-message">
+				<input type="text" name="name" placeholder="Name"><br>
+				<input type="email" name="email" placeholder="Email"><br>
 				<textarea rows="10" cols="50" placeholder="Write your message here"></textarea><br>
 				<button>Send</button>
 			</form>
@@ -57,6 +57,35 @@
 	</div>
 	
 </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+	
+<!-- Initialize Firebase -->
+<script type="text/javascript">
+	const firebaseConfig = {
+		apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+		authDomain: "rene-mybrand.firebaseapp.com",
+		databaseURL: "https://rene-mybrand.firebaseio.com",
+		projectId: "rene-mybrand",
+		storageBucket: "rene-mybrand.appspot.com",
+		messagingSenderId: "490414408541",
+		appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+		measurementId: "G-JXQFNRJY8M"
+	};
+	firebase.initializeApp(firebaseConfig);
+	const db=firebase.firestore();
+
+</script>
+	
+<script src="../scripts/sendMessage.js"></script>
+
+
+
+
 
 <script type="text/javascript">
 
