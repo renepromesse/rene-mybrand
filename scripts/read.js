@@ -24,6 +24,7 @@ function displayData(doc){
     content.innerHTML=doc.data().content;
     title.textContent= doc.data().title;
     date.textContent= doc.data().post_date;
+    top_img.style.backgroundImage="url('"+doc.data().img+"')";
 
     //append elements
 

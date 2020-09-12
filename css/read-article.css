@@ -10,7 +10,6 @@ body{
 /*--------------------------------------Start of read article design-------------------*/
 .top-img{
 	height: 320px;
-	background-image: url("../img/DoctorKing.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: 0px -200px;
