@@ -1,4 +1,3 @@
-
 /*-------------checking authentication------------*/
 
 auth.onAuthStateChanged(user =>{
