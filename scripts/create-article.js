@@ -25,7 +25,6 @@ let top_preview=document.getElementById('top-img-prev');
 form_article.addEventListener('submit', (event) =>{
     event.preventDefault();
     let post_but=document.getElementById('post');
-    let button=document.getElementById('create-article');
 
     if(post_but.innerHTML=="Post"){
        if(form_article.title.value !=="" && form_article.content.value !== "" && form_article.files != "undefined"){
