@@ -13,8 +13,8 @@
 			<ul id="menu">
 				<li><a href="../index.html" class="nav-link">HOME</a></li>
 				<li><a href="#" class="nav-link">ARTICLES</a></li>
-				<li><a href="./view-message.html" class="nav-link">MESSAGES</a></li>
-				<li><a href="#" class="nav-link">LOGOUT</a></li>
+				<li><a href="./view-message.html" class="nav-link">MESSAGES</a><span id="spanNotification"></span></li>
+				<li><a href="javascript:void(0)" id="logout" class="nav-link">LOGOUT</a></li>
 			</ul>
 		</nav>
 		
@@ -33,9 +33,9 @@
 				<form>
 					<input type="file" accept="image/*" name="filed" id="files">
 					<label for="files" id="labelfile"> Click to Choose a cover image</label><br><br>
-					<input type="text" name="" placeholder="Title of the article"><br>
-					<textarea class="write-article" cols="40" rows="15" placeholder="Write the article here"></textarea><br>
-					<button>Post</button>
+					<input type="text" name="" id="title" placeholder="Title of the article"><br>
+					<textarea class="write-article" id="content" cols="40" rows="15" placeholder="Write the article here"></textarea><br>
+					<button id="post">Post</button>
 					<button type="reset">Cancel</button>
 					<button type="button">Preview</button>
 				</form>
@@ -48,53 +48,67 @@
 			<h4>Edit & Delete old Articles</h4>
 			<hr style="width: 7%;">
 		</div>
-
-		<div class="old-articles-section">
-			<div class="article-img">
-				<img src="../img/prof-img.png" alt="dr king">
-			</div>
-			<div class="article-info">
-				<div class="article-title">
-					<h2>The single greatest thing I learned this past decades.</h2>
-					<p>January 20, 2020</p>
-				</div>
-				<div class="edit-delete">
-					<h3 class="edit">Edit</h3>
-					<h3 class="delete">Delete</h3>
-				</div>  
-			</div>
-		</div>
-		<div class="old-articles-section">
-			<div class="article-img">
-				<img src="../img/prof-img.png" alt="dr king">
-			</div>
-			<div class="article-info">
-				<div class="article-title">
-					<h2>The single greatest thing I learned this past decades.</h2>
-					<p>January 20, 2020</p>
-				</div>
-				<div class="edit-delete">
-					<h3 class="edit">Edit</h3>
-					<h3 class="delete">Delete</h3>
-				</div>  
-			</div>
-		</div>
-		<div class="old-articles-section">
-			<div class="article-img">
-				<img src="../img/prof-img.png" alt="dr king">
-			</div>
-			<div class="article-info">
-				<div class="article-title">
-					<h2>The single greatest thing I learned this past decades.</h2>
-					<p>January 20, 2020</p>
-				</div>
-				<div class="edit-delete">
-					<h3 class="edit">Edit</h3>
-					<h3 class="delete">Delete</h3>
-				</div>  
-			</div>
-		</div>
+		
 	</div>
+
+
+
+
+
+
+	<!-- firebase intergration -->
+
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+		
+	<!-- Initialize Firebase -->
+	<script type="text/javascript">
+		const firebaseConfig = {
+			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+			authDomain: "rene-mybrand.firebaseapp.com",
+			databaseURL: "https://rene-mybrand.firebaseio.com",
+			projectId: "rene-mybrand",
+			storageBucket: "rene-mybrand.appspot.com",
+			messagingSenderId: "490414408541",
+			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+			measurementId: "G-JXQFNRJY8M"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const auth=firebase.auth();
+		const db= firebase.firestore();
+		const stor= firebase.storage().ref();
+
+	</script>
+		
+	<script src="../scripts/create-article.js"></script>
+	<script src="../scripts/notification.js"></script>
+	<script src="../scripts/logout.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- some basic javascript -->
 
