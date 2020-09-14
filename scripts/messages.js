@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 /*-------------checking authentication------------*/
 
 auth.onAuthStateChanged(user =>{
