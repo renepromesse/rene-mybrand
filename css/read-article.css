@@ -10,7 +10,6 @@ body{
 /*--------------------------------------Start of read article design-------------------*/
 .top-img{
 	height: 320px;
-	background-image: url("../img/DoctorKing.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: 0px -200px;
@@ -49,12 +48,14 @@ body{
 	width: 65%;
 	margin: auto;
 	margin-bottom: 30px;
+	text-align: center;
 }
 .top-title h1{
 	font-size: 40px;
 	font-weight: bold;
 	margin-bottom: 5px;
 	-webkit-text-stroke:1px black;
+	text-align: center;
 }
 .top-title p{
 	margin-top: 10px;
