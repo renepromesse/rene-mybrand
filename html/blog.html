@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blog page</title>
 	<link rel="stylesheet" type="text/css" href="../css/menu-style.css">
@@ -24,44 +25,43 @@
 		<p id="blog-title">The <strong>Out of the Box</strong> Blog</p>
 	</div>
 	<div class="article-container">
-		<div class="article-section">
-			<div class="article-img">
-				<a href="read-article.html"><img src="../img/drking.PNG" alt="dr king"></a>
-			</div>
-			<div class="article-title">
-				<a href="read-article.html"><h2>My Letter to Dr. King</h2></a>
-				<div class="article-info">
-					<a href="read-article.html"><p>January 20, 2020</p> </a> 
-					<a href="read-article.html"><p>2 comments</p></a> 
-				</div>
-			</div>
-		</div>
-		<div class="article-section">
-			<div class="article-img">
-				<img src="../img/mountains.PNG" alt="the mountains">
-			</div>
-			<div class="article-title">
-				<a href="#"><h2>The single greatest thing I learned this past decades.</h2></a>
-				<div class="article-info">
-					<a href="#"><p>January 20, 2020</p></a>
-					<a href="#"><p>2 comments</p></a>
-				</div>
-			</div>
-		</div>
-		<div class="article-section">
-			<div class="article-img">
-				<img src="../img/typing.PNG" alt="typing on computer">
-			</div>
-			<div class="article-title">
-				<a href="#"><h2>13 reasons to create a blog (plus 5 great reasons not to)</h2></a>
-				<div class="article-info">
-					<a href="#"><p>January 20, 2020</p></a>
-					<a href="#"><p>2 comments</p></a>
-				</div>
-			</div>
-		</div>
+		
 	</div>
 </div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+		
+	<!-- Initialize Firebase -->
+	<script type="text/javascript">
+		const firebaseConfig = {
+			apiKey: "AIzaSyDVcSO02XkkbS-MnBS3oQ4qUgCbqZyiI94",
+			authDomain: "rene-mybrand.firebaseapp.com",
+			databaseURL: "https://rene-mybrand.firebaseio.com",
+			projectId: "rene-mybrand",
+			storageBucket: "rene-mybrand.appspot.com",
+			messagingSenderId: "490414408541",
+			appId: "1:490414408541:web:a2753bfe5d796f2c1f5eb4",
+			measurementId: "G-JXQFNRJY8M"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const db=firebase.firestore();
+
+	</script>
+		
+	<script src="../scripts/blog.js"></script>
+
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
 
