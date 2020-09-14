@@ -16,6 +16,8 @@ auth.onAuthStateChanged(user =>{
 const articles_div=document.getElementsByClassName('articles')[0];
 const form_article=document.getElementsByTagName('form')[0];
 let id='';
+let labelfiles=document.getElementById('labelfile');
+let top_preview=document.getElementById('top-img-prev');
 
 /*------------storing new article into firestore-------------*/
 
@@ -53,8 +55,9 @@ form_article.addEventListener('submit', (event) =>{
                     post_date: post_date,
                     img: url
                 }).then(()=>{
-                    alert('The Post is created successfully!');//work on a modal of a confirmation
                     form_article.reset();
+                    labelfiles.innerHTML="Click to choose a cover image";
+                    location.reload();
                 })
                 
             });
@@ -71,7 +74,8 @@ form_article.addEventListener('submit', (event) =>{
             id="";
             post_but.innerHTML="Post"; 
             form_article.reset();
-            button.click();
+            location.reload();
+            
         })
         
         
@@ -163,6 +167,8 @@ function outputResults(doc){
     edit.addEventListener('click', (event) =>{
         event.stopPropagation();
         let button=document.getElementById('create-article');
+
+
         if(button.innerHTML == 'Create new article'){
             button.click();
             form_article.title.focus();
@@ -171,7 +177,13 @@ function outputResults(doc){
             document.getElementById('post').innerHTML="Post changes";
             id=event.target.parentElement.getAttribute('data-id');
             //set the image here when all non-image post are removed in firestore
-
+            labelfiles.innerHTML="can't change the cover image";
+            labelfiles.style.backgroundImage="url('"+doc.data().img+"')";
+            labelfiles.style.backgroundRepeat="no-repeat";
+            labelfiles.style.backgroundSize="100% auto";
+            labelfiles.style.backgroundPosition="0px -100px";
+            document.getElementById('files').disabled="true";
+            top_preview.style.backgroundImage="url('"+doc.data().img+"')";
         }
     });
 

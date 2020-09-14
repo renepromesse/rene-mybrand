@@ -34,6 +34,7 @@
 		preview.onclick=function () {
 			modal.style.display="block";
 			t_prev.innerHTML= t.value;
+			cont_prev.innerHTML=cont.value;
 			
 		}
 		closes.onclick=function(){
@@ -51,7 +52,9 @@
             URL.revokeObjectURL(link);
             labelfile.style.background="#3377CC";
             labelfile.innerHTML="Click to Choose a cover image";
-            document.getElementById('top-img-prev').style.backgroundImage="";
+			document.getElementById('top-img-prev').style.backgroundImage="";
+			document.getElementById('files').disabled=false;
+			document.getElementById('post').innerHTML="Post";
         })
 
 
