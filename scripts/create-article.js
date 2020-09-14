@@ -199,9 +199,11 @@ function outputResults(doc){
     dlt.addEventListener('click', (event) =>{
         event.stopPropagation();
         id= event.target.parentElement.getAttribute('data-id');
-        db.collection('articles').doc(id).delete();
-        return 1;
-    });
+        dlt.textContent="deleting...";
+        db.collection('articles').doc(id).delete().then(() =>{
+            location.reload();  
+        });
+    })
 
 
 
