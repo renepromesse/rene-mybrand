@@ -1,4 +1,4 @@
-//let id="MpMWLDl3Ext3DVzUuGuW";
+/*--------------some global variables------------*/
 const top_img= document.getElementsByClassName('top-img')[0];
 const top_title= document.getElementsByClassName('top-title')[0];
 const dates= document.getElementsByClassName('dates')[0];
@@ -35,7 +35,6 @@ function displayData(doc){
 }
 let docRef= db.collection('articles').doc(id);
 docRef.get().then(function(doc){
-    //console.log(doc.data().title);
     displayData(doc);
 
 
@@ -61,7 +60,6 @@ form_comment.addEventListener('submit',(event)=>{
         db.collection('articles/'+id+'/comments').onSnapshot(snapshot =>{
             let num_comments=snapshot.docs.length;
             if(num_comments>0){
-                console.log('the num_comments :'+ num_comments);
                 db.collection('articles').doc(id).update({
                     num_comments: num_comments
                 })
@@ -69,10 +67,7 @@ form_comment.addEventListener('submit',(event)=>{
         })
          
     
-        form_comment.name.value="";
-        form_comment.comment.value="";
-        form_comment.email.value="";
-        console.log('comment added');
+        form_comment.reset();
     })
 });
 
